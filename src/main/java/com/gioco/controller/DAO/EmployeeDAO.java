@@ -1,17 +1,16 @@
 package com.gioco.controller.DAO;
 
-import com.gioco.controller.Tools;
 import com.gioco.model.object.Employee;
 import com.gioco.model.repository.EmployeeRepo;
 
 import java.util.ArrayList;
 
 public class EmployeeDAO {
-    ArrayList<Employee> employees = new ArrayList<>();
+    public static ArrayList<Employee> employees = new ArrayList<>();
     EmployeeRepo employeeRepo = new EmployeeRepo();
 
 
-    EmployeeDAO() {
+    public EmployeeDAO() {
         employees.add(employeeRepo.getJamaEmplooyee());
     }
 

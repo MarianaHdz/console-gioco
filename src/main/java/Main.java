@@ -1,8 +1,8 @@
-import com.gioco.view.MainMenu;
+import com.gioco.view.Login;
 
 public class Main {
     public static void main(String[] args) {
-        MainMenu mainMenu = new MainMenu();
-        mainMenu.show();
+        Login login = new Login();
+        login.show();
     }
 }

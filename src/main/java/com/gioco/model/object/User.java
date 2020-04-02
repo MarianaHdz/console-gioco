@@ -2,8 +2,10 @@ package com.gioco.model.object;
 
 import com.gioco.controller.Tools;
 
+import java.util.ArrayList;
+
 public abstract class User {
-    private static int it = 0;
+    private static int it = 1;
     private int id;
     private String nickname;
     private String password;
@@ -99,7 +101,10 @@ public abstract class User {
     }
 
     public String getFullName() {
-        return fullName;
+        if (this.fullName.equals(null)) {
+            this.fullName = firstName + " " + secondName + " " + middleName + " " + lastName;
+            return fullName;
+        } else return fullName;
     }
 
     public void setFullName(String fullName) {
@@ -163,9 +168,17 @@ public abstract class User {
         };
     }
 
+    public User searchUser(ArrayList<User> users, String nickname) {
+        return new User() {
+            @Override
+            protected void finalize() throws Throwable {
+                super.finalize();
+            }
+        };
+    }
+
     @Override
     public String toString() {
-// Necesitamos conseguir la fecha actual para poder calcular la edad sin necesidad de generar un objeto Date con la instancia de la fecha actual.
-        return "\nid: " + this.id + "\nNombre: " + this.fullName + "\nEdad: " + (this.bornDate) + "\nCorreo electrónico: " + this.email + "\nNúmero de teléfono: " + this.phoneNumber;
+        return "Id: " + this.id + "\nNickname: " + this.nickname + "\nEmail: " + this.email + "\nNombre completo: " + this.firstName + " " + secondName + " " + middleName + " " + lastName;
     }
 }

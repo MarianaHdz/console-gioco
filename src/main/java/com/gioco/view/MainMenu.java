@@ -10,8 +10,6 @@ public class MainMenu implements IVisualizable {
     @Override
     public void show() {
         do {
-            Tools.cleanScreen();
-            Tools.cleanLine();
             Tools.printTitle("Gioco - Tienda de videojuegos");
             System.out.println("1.- Administrar Artículos");
             System.out.println("2.- Administrar Clientes");

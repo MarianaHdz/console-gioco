@@ -2,6 +2,8 @@ package com.gioco.model.object;
 
 import com.gioco.controller.Tools;
 
+import java.util.ArrayList;
+
 public class Employee extends User {
     private int idSupervisor;
     private String branch;
@@ -60,4 +62,15 @@ public class Employee extends User {
         return new Employee(nickname, password, firstName, secondName, middleName, lastName, fullName, bornDate, email, phoneNumber, userType, since, status, idSupervisor, branch);
     }
 
+    @Override
+    public User searchUser(ArrayList<User> users, String nickname) {
+        Employee employee = null;
+
+        for (User u : users) {
+            if (u.getNickname().equals(nickname)) {
+                employee = (Employee) u;
+            }
+        }
+        return employee;
+    }
 }
