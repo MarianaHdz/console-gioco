@@ -1,6 +1,4 @@
-package com.gioco.model.objects;
-
-import java.util.Date;
+package com.gioco.model.object;
 
 public class Client extends User {
     private String rfc;

@@ -1,4 +1,4 @@
-package com.gioco.model.objects;
+package com.gioco.model.object;
 
 public class Souvenirs extends Product {
     private String type;

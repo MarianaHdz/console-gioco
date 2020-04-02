@@ -1,6 +1,8 @@
-package com.gioco.view;
+package com.gioco.controller;
 
-public class consoleTools {
+import java.util.Scanner;
+
+public class Tools {
 
     /**
      * Colores
@@ -22,6 +24,9 @@ public class consoleTools {
     public static void cleanScreen() {
         System.out.print("\u001B[0;0H");
         System.out.print("\u001B[2J");
+        System.out.println("\n");
+        System.out.println("\n");
+        System.out.println("\n");
     }
 
     /**
@@ -45,5 +50,23 @@ public class consoleTools {
 
     public static void cleanLine() {
         System.out.print("\r\u001B[0K");
+    }
+
+    public static int getOption() {
+        Scanner theScanner = new Scanner(System.in);
+        System.out.print("\nIngresa la opción deseada: ");
+        return theScanner.nextInt();
+    }
+
+    public static String getString(String value) {
+        Scanner theScanner = new Scanner(System.in);
+        System.out.print("\nIngresa " + value + ": ");
+        return theScanner.nextLine();
+    }
+
+    public static void validateOption(int min, int max, int value) {
+        if (!(value >= min && value <= max)) {
+            System.out.println(ANSI_RED + "Opción invalida, escoge otra." + ANSI_RESET);
+        }
     }
 }

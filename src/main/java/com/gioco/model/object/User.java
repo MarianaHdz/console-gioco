@@ -1,8 +1,9 @@
-package com.gioco.model.objects;
+package com.gioco.model.object;
 
-import java.util.Date;
+import com.gioco.controller.Tools;
 
 public abstract class User {
+    private static int it = 0;
     private int id;
     private String nickname;
     private String password;
@@ -11,14 +12,34 @@ public abstract class User {
     private String middleName;
     private String lastName;
     private String fullName;
-    private Date bornDate;
+    private String bornDate;
     private String email;
     private String phoneNumber;
     private int userType;
-    private Date since;
+    private String since;
     private int status;
 
     User() {
+        this.id = it;
+        it++;
+    }
+
+    public User(String nickname, String password, String firstName, String secondName, String middleName, String lastName, String fullName, String bornDate, String email, String phoneNumber, int userType, String since, int status) {
+        this.nickname = nickname;
+        this.password = password;
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.middleName = middleName;
+        this.lastName = lastName;
+        this.fullName = fullName;
+        this.bornDate = bornDate;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.userType = userType;
+        this.since = since;
+        this.status = status;
+        this.id = it;
+        it++;
     }
 
     public int getId() {
@@ -85,11 +106,11 @@ public abstract class User {
         this.fullName = fullName;
     }
 
-    public Date getBornDate() {
+    public String getBornDate() {
         return bornDate;
     }
 
-    public void setBornDate(Date bornDate) {
+    public void setBornDate(String bornDate) {
         this.bornDate = bornDate;
     }
 
@@ -117,11 +138,11 @@ public abstract class User {
         this.userType = userType;
     }
 
-    public Date getSince() {
+    public String getSince() {
         return since;
     }
 
-    public void setSince(Date since) {
+    public void setSince(String since) {
         this.since = since;
     }
 
@@ -131,6 +152,15 @@ public abstract class User {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    public User addUser() {
+        return new User() {
+            @Override
+            protected void finalize() throws Throwable {
+                super.finalize();
+            }
+        };
     }
 
     @Override

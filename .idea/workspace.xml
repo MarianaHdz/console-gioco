@@ -10,10 +10,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/gioco/view/MainMenu.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/com/gioco/controller/Tools.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1Zs6ane0lfNidKXHBvVYlHc2leM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -37,6 +41,20 @@
       <recent name="C:\Users\jama1\Desktop\IntegradoraSegundo\Console-Gioco-Project\src\main\java\com\gioco\model" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Console-Gioco-Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -47,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585615520920</updated>
-      <workItem from="1585615527371" duration="5842000" />
+      <workItem from="1585615527371" duration="21535000" />
     </task>
     <servers />
   </component>
@@ -59,14 +77,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="392" y="88" key="#Project_Structure/0.0.1600.860@0.0.1600.860" timestamp="1585616257954" />
-    <state x="605" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1585636360383">
+    <state x="605" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1585791835978">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="605" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1585636360383" />
-    <state x="622" y="355" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585616362598">
+    <state x="605" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1585791835978" />
+    <state x="622" y="355" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1585771665804">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="622" y="355" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1585616362598" />
+    <state x="622" y="355" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1600.860@0.0.1600.860" timestamp="1585771665804" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1585770855182">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1585770855182" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1585770855182">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1585770855182" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1585770855181">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1585770855181" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1585770855182">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1585770855182" />
     <state x="301" y="72" key="SettingsEditor" timestamp="1585615588849">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
